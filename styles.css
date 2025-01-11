@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://raw.githubusercontent.com/Juan392/cartaforlove/21e1802a09e4215eb1726f85c2d9d9997a6c81fc/cac320a9-de8d-4550-8fb4-258a3bc14398.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.carta-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.carta {
+    background-color: rgba(255, 165, 79, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.carta-header h1 {
+    font-size: 24px;
+    color: #e57373;
+    margin-bottom: 15px;
+}
+
+.carta-body p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.carta-footer {
+    margin-top: 15px;
+}
+
+.carta-footer p {
+    font-size: 14px;
+    color: #444;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+#play-button {
+    width: 60px;
+    height: 60px;
+    background-color: #ffa726;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#play-button:hover {
+    background-color: #ff9800;
+}
+
+#progress-container {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background: #ffc107;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #e57373;
+    border-radius: 10px;
+}
+
+#heart-progress {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url('https://img.icons8.com/ios-filled/50/000000/like.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-out;
+}
